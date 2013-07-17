@@ -1,4 +1,4 @@
-Sublime Text 2 "Monokai" Chrome Inspector theme
+Sublime Text 2 "Monokai" Chrome Inspector Theme
 ==============================
 
 Make Chrome Inspector look like Sublime's "Monokai" color scheme.
