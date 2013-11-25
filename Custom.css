@@ -161,7 +161,7 @@ body.platform-linux .monospace, body.platform-linux .source-code {
   #storage-views .script-view,
   #elements-content,
   #network-views .text-editor-contents,
-  #script-resource-views .script-view, .source-code {
+  #script-resource-views .script-view, #elements-content .source-code {
     background: #242424 !important;
     font-size: 12px !important;
   }
@@ -265,6 +265,10 @@ body.platform-linux .monospace, body.platform-linux .source-code {
   #network-views .webkit-html-js-node,
   #script-resource-views .webkit-html-js-node {
     color: #c2c3c3 !important;
+  }
+
+  #console-view .webkit-html-attribute-value {
+    color: rgb(153, 69, 0) !important;
   }
 
   #storage-views .webkit-html-resource-link,
@@ -394,4 +398,9 @@ body.platform-linux .monospace, body.platform-linux .source-code {
 
   .source-code.elements-tree-editor.being-edited {
     background-color: #F2F0FF;
+  }
+
+  #console-view .object-info-state-note {
+     /*color: #FCF18B !important;*/
+     background-color: rgb(153, 69, 0) !important;
   }
