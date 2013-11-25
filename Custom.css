@@ -161,7 +161,7 @@ body.platform-linux .monospace, body.platform-linux .source-code {
   #storage-views .script-view,
   #elements-content,
   #network-views .text-editor-contents,
-  #script-resource-views .script-view {
+  #script-resource-views .script-view, .source-code {
     background: #242424 !important;
     font-size: 12px !important;
   }
@@ -187,12 +187,14 @@ body.platform-linux .monospace, body.platform-linux .source-code {
     z-index: 2;
   }
 
-  #elements-content .selected {
-    background-color: #4c4d5d !important;
+  #elements-content .selected, #elements-content .source-code .CodeMirror-scroll {
+    background-color: #3e3f4c !important;
   }
 
-  #elements-content .editing {
+  #elements-content .editing, #elements-content .source-code {
     background-color: #242424 !important;
+    color: #eee !important;
+
   }
 
   #elements-content .parent::before {
@@ -211,7 +213,7 @@ body.platform-linux .monospace, body.platform-linux .source-code {
   #storage-views .webkit-html-comment,
   #elements-content .webkit-html-comment,
   #network-views .webkit-html-comment,
-  #script-resource-views .webkit-html-comment {
+  #script-resource-views .webkit-html-comment, .source-code .cm-xml-comment {
     color: #969073 !important;
   }
 
@@ -225,14 +227,14 @@ body.platform-linux .monospace, body.platform-linux .source-code {
   #storage-views .webkit-html-tag .webkit-html-tag-name,
   #elements-content .webkit-html-tag .webkit-html-tag-name,
   #network-views .webkit-html-tag .webkit-html-tag-name,
-  #script-resource-views .webkit-html-tag .webkit-html-tag-name {
+  #script-resource-views .webkit-html-tag .webkit-html-tag-name, .source-code .cm-xml-tag {
     color: #F61E97 !important;
   }
 
   #storage-views .webkit-html-attribute-name,
   #elements-content .webkit-html-attribute-name,
   #network-views .webkit-html-attribute-name,
-  #script-resource-views .webkit-html-attribute-name {
+  #script-resource-views .webkit-html-attribute-name, .source-code .cm-xml-attribute {
     color: #A9F82E !important;
   }
 
@@ -243,7 +245,7 @@ body.platform-linux .monospace, body.platform-linux .source-code {
   #storage-views a.webkit-html-attribute-value,
   #elements-content a.webkit-html-attribute-value,
   #network-views a.webkit-html-attribute-value,
-  #script-resource-views a.webkit-html-attribute-value {
+  #script-resource-views a.webkit-html-attribute-value, .source-code .cm-xml-string {
     color: #FFF6A0 !important;
   }
 
@@ -388,4 +390,8 @@ body.platform-linux .monospace, body.platform-linux .source-code {
   #network-views .webkit-javascript-regexp,
   #script-resource-views .webkit-javascript-regexp {
     color: #e9c062 !important;
+  }
+
+  .source-code.elements-tree-editor.being-edited {
+    background-color: #F2F0FF;
   }
